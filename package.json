@@ -4,7 +4,8 @@
   "description": "This repository shall contains a collection of random CNC projects and ideas.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "inflate": "ts-node inflate.ts",
+    "deflate": "ts-node deflate.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/claasahl/cnc-projects/issues"
   },
-  "homepage": "https://github.com/claasahl/cnc-projects#readme"
+  "homepage": "https://github.com/claasahl/cnc-projects#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.4.33",
+    "@types/node": "^14.14.35",
+    "@types/rimraf": "^3.0.0",
+    "ts-node": "^9.1.1"
+  }
 }
