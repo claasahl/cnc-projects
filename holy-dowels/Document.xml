@@ -29,7 +29,7 @@
             <String value=""/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2021-03-24T19:49:57Z"/>
+            <String value="2021-03-25T17:05:40Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
             <String value="All rights reserved"/>
@@ -55,7 +55,7 @@
             <Uuid value="1d14f173-d54b-42aa-b6f0-003d41d7133b"/>
         </Property>
     </Properties>
-    <Objects Count="24" Dependencies="1">
+    <Objects Count="26" Dependencies="1">
         <ObjectDeps Name="Body" Count="8">
             <Dep Name="Pocket001"/>
             <Dep Name="Origin"/>
@@ -131,6 +131,13 @@
         <ObjectDeps Name="Stock" Count="1">
             <Dep Name="Model"/>
         </ObjectDeps>
+        <ObjectDeps Name="ToolBit001" Count="0"/>
+        <ObjectDeps Name="claas_6mm_endmill" Count="3">
+            <Dep Name="ToolBit001"/>
+            <Dep Name="SetupSheet"/>
+            <Dep Name="SetupSheet"/>
+        </ObjectDeps>
+        <ObjectDeps Name="CutMaterial" Count="0"/>
         <ObjectDeps Name="Drilling" Count="23">
             <Dep Name="Clone"/>
             <Dep Name="Clone"/>
@@ -156,12 +163,7 @@
             <Dep Name="SetupSheet"/>
             <Dep Name="SetupSheet"/>
         </ObjectDeps>
-        <ObjectDeps Name="ToolBit001" Count="0"/>
-        <ObjectDeps Name="claas_6mm_endmill" Count="3">
-            <Dep Name="ToolBit001"/>
-            <Dep Name="SetupSheet"/>
-            <Dep Name="SetupSheet"/>
-        </ObjectDeps>
+        <ObjectDeps Name="CutMaterial001" Count="0"/>
         <Object type="PartDesign::Body" name="Body" id="1" />
         <Object type="App::Origin" name="Origin" id="2" />
         <Object type="App::Line" name="X_Axis" id="3" />
@@ -183,18 +185,20 @@
         <Object type="Part::FeaturePython" name="Clone" id="27" />
         <Object type="App::DocumentObjectGroup" name="Tools" id="28" />
         <Object type="Part::FeaturePython" name="Stock" id="42" />
-        <Object type="Path::FeaturePython" name="Drilling" id="43" />
         <Object type="Part::FeaturePython" name="ToolBit001" id="45" />
         <Object type="Path::FeaturePython" name="claas_6mm_endmill" id="57" />
+        <Object type="Mesh::FeaturePython" name="CutMaterial" id="73" />
+        <Object type="Path::FeaturePython" name="Drilling" id="75" />
+        <Object type="Mesh::FeaturePython" name="CutMaterial001" id="78" />
     </Objects>
-    <ObjectData Count="24">
+    <ObjectData Count="26">
         <Object name="Body" Extensions="True">
             <Extensions Count="1">
                 <Extension type="App::OriginGroupExtension" name="OriginGroupExtension">
                 </Extension>
             </Extensions>
             <Properties Count="10" TransientCount="1">
-                <_Property name="_GroupTouched" type="App::PropertyBool" status="100663424"/>
+                <_Property name="_GroupTouched" type="App::PropertyBool" status="100663425"/>
                 <Property name="BaseFeature" type="App::PropertyLink">
                     <Link value=""/>
                 </Property>
@@ -230,7 +234,7 @@
                 <Property name="Tip" type="App::PropertyLink">
                     <Link value="Pocket001"/>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -566,7 +570,7 @@
                 <Property name="UseCustomVector" type="App::PropertyBool">
                     <Bool value="false"/>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -1418,7 +1422,7 @@
         </Object>
         <Object name="Pocket001">
             <Properties Count="18" TransientCount="1">
-                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658241"/>
+                <_Property name="_Body" type="App::PropertyLinkHidden" status="251658240"/>
                 <Property name="AddSubShape" type="Part::PropertyPartShape">
                     <Part file="PartShape8.brp"/>
                 </Property>
@@ -1473,7 +1477,7 @@
                     <LinkSub value="" count="0">
                     </LinkSub>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -1481,7 +1485,7 @@
         <Object name="Job">
             <Properties Count="23" TransientCount="0">
                 <Property name="CycleTime" type="App::PropertyString" group="Path" doc="Job Cycle Time Estimation" attr="0" ro="0" hide="0" status="2097156">
-                    <String value="00:01:22"/>
+                    <String value="00:01:17"/>
                 </Property>
                 <Property name="Description" type="App::PropertyString" group="Path" doc="An optional description for this job" attr="0" ro="0" hide="0" status="2097152">
                     <String value=""/>
@@ -1505,7 +1509,7 @@
                     <String value=""/>
                 </Property>
                 <Property name="LastPostProcessDate" type="App::PropertyString" group="Output" doc="Last Time the Job was post-processed" attr="0" ro="0" hide="0" status="2097160">
-                    <String value="2021-03-24 20:49:16.239080"/>
+                    <String value="2021-03-25 17:44:43.942916"/>
                 </Property>
                 <Property name="LastPostProcessOutput" type="App::PropertyString" group="Output" doc="Last Time the Job was post-processed" attr="0" ro="0" hide="0" status="2097160">
                     <String value="C:/Users/Claas/git/cnc-projects/holy-dowels/holy-dowels.gcode"/>
@@ -1681,7 +1685,7 @@
                 </Extension>
             </Extensions>
             <Properties Count="5" TransientCount="1">
-                <_Property name="_GroupTouched" type="App::PropertyBool" status="100663424"/>
+                <_Property name="_GroupTouched" type="App::PropertyBool" status="100663425"/>
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
                     <ExpressionEngine count="0">
                     </ExpressionEngine>
@@ -1745,7 +1749,7 @@
                     <String value="Model"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="-100.0000000000000000" Py="-40.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="-100.0000000000000000" Py="-40.0000000000000000" Pz="-28.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Proxy" type="App::PropertyPythonObject">
                     <Python value="IkNsb25lIg==" encoded="yes" module="draftobjects.clone" class="Clone"/>
@@ -1760,7 +1764,7 @@
                     <LinkSubList count="0">
                     </LinkSubList>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="true"/>
                 </Property>
             </Properties>
@@ -1829,7 +1833,7 @@
                     <Link value=""/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="0.0000000000000000" Py="-0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="-28.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="Proxy" type="App::PropertyPythonObject">
                     <Python value="bnVsbA==" encoded="yes" module="PathScripts.PathStock" class="StockFromBase"/>
@@ -1842,167 +1846,6 @@
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="true"/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Drilling">
-            <Properties Count="37" TransientCount="0">
-                <Property name="Active" type="App::PropertyBool" group="Path" doc="Make False, to prevent operation from generating code" attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="AddTipLength" type="App::PropertyBool" group="Drill" doc="Calculate the tip length and subtract from final depth" attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="AttemptInverseAngle" type="App::PropertyBool" group="Rotation" doc="Attempt the inverse angle for face access if original rotation fails." attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Base" type="App::PropertyLinkSubListGlobal" group="Path" doc="The base geometry for this operation" attr="0" ro="0" hide="0" status="2097152">
-                    <LinkSubList count="20">
-                        <Link obj="Clone" sub="Face25"/>
-                        <Link obj="Clone" sub="Face26"/>
-                        <Link obj="Clone" sub="Face27"/>
-                        <Link obj="Clone" sub="Face28"/>
-                        <Link obj="Clone" sub="Face29"/>
-                        <Link obj="Clone" sub="Face30"/>
-                        <Link obj="Clone" sub="Face31"/>
-                        <Link obj="Clone" sub="Face32"/>
-                        <Link obj="Clone" sub="Face33"/>
-                        <Link obj="Clone" sub="Face34"/>
-                        <Link obj="Clone" sub="Face35"/>
-                        <Link obj="Clone" sub="Face36"/>
-                        <Link obj="Clone" sub="Face37"/>
-                        <Link obj="Clone" sub="Face38"/>
-                        <Link obj="Clone" sub="Face39"/>
-                        <Link obj="Clone" sub="Face40"/>
-                        <Link obj="Clone" sub="Face41"/>
-                        <Link obj="Clone" sub="Face42"/>
-                        <Link obj="Clone" sub="Face43"/>
-                        <Link obj="Clone" sub="Face44"/>
-                    </LinkSubList>
-                </Property>
-                <Property name="ClearanceHeight" type="App::PropertyDistance" group="Depth" doc="The height needed to clear clamps and obstructions" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="33.0000000000000000"/>
-                </Property>
-                <Property name="Comment" type="App::PropertyString" group="Path" doc="An optional comment for this Operation" attr="0" ro="0" hide="0" status="2097152">
-                    <String value=""/>
-                </Property>
-                <Property name="CoolantMode" type="App::PropertyString" group="Path" doc="Coolant mode for this operation" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="None"/>
-                </Property>
-                <Property name="CycleTime" type="App::PropertyString" group="Path" doc="Operations Cycle Time Estimation" attr="0" ro="0" hide="0" status="2097156">
-                    <String value="00:01:22"/>
-                </Property>
-                <Property name="Disabled" type="App::PropertyStringList" group="Base" doc="List of disabled features" attr="0" ro="0" hide="0" status="2097152">
-                    <StringList count="0">
-                    </StringList>
-                </Property>
-                <Property name="DwellEnabled" type="App::PropertyBool" group="Drill" doc="Enable dwell" attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DwellTime" type="App::PropertyFloat" group="Drill" doc="The time to dwell between peck cycles" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="EnableRotation" type="App::PropertyEnumeration" group="Rotation" doc="Enable rotation to gain access to pockets/areas not normal to Z axis." attr="0" ro="0" hide="0" status="2097152">
-                    <Integer value="0" CustomEnum="true"/>
-                    <CustomEnumList count="4">
-                        <Enum value="Off"/>
-                        <Enum value="A(x)"/>
-                        <Enum value="B(y)"/>
-                        <Enum value="A &amp; B"/>
-                    </CustomEnumList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="6">
-                        <Expression path="StartDepth" expression="OpStartDepth"/>
-                        <Expression path="FinalDepth" expression="OpFinalDepth"/>
-                        <Expression path="SafeHeight" expression="OpStockZMax + SetupSheet.SafeHeightOffset"/>
-                        <Expression path="RetractHeight" expression="OpStartDepth + 1mm"/>
-                        <Expression path="ClearanceHeight" expression="OpStockZMax + SetupSheet.ClearanceHeightOffset"/>
-                        <Expression path="PeckDepth" expression="OpToolDiameter * 0.75"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="ExtraOffset" type="App::PropertyEnumeration" group="Drill" doc="How far the drill depth is extended" attr="0" ro="0" hide="0" status="2097152">
-                    <Integer value="0" CustomEnum="true"/>
-                    <CustomEnumList count="3">
-                        <Enum value="None"/>
-                        <Enum value="Drill Tip"/>
-                        <Enum value="2x Drill Tip"/>
-                    </CustomEnumList>
-                </Property>
-                <Property name="FinalDepth" type="App::PropertyDistance" group="Depth" doc="Final Depth of Tool- lowest value in Z" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="8.0000000000000000"/>
-                </Property>
-                <Property name="InverseAngle" type="App::PropertyBool" group="Rotation" doc="Inverse the angle. Example: -22.5 -&gt; 22.5 degrees." attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Drilling"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="Locations" type="App::PropertyVectorList" group="Path" doc="Base locations for this operation" attr="0" ro="0" hide="0" status="2097152">
-                    <VectorList file="Locations"/>
-                </Property>
-                <Property name="OpFinalDepth" type="App::PropertyDistance" group="Op Values" doc="Holds the calculated value for the FinalDepth" attr="0" ro="0" hide="0" status="2097156">
-                    <Float value="8.0000000000000000"/>
-                </Property>
-                <Property name="OpStartDepth" type="App::PropertyDistance" group="Op Values" doc="Holds the calculated value for the StartDepth" attr="0" ro="0" hide="0" status="2097156">
-                    <Float value="28.0000000000000000"/>
-                </Property>
-                <Property name="OpStockZMax" type="App::PropertyDistance" group="Op Values" doc="Holds the max Z value of Stock" attr="0" ro="0" hide="0" status="2097156">
-                    <Float value="28.0000000000000000"/>
-                </Property>
-                <Property name="OpStockZMin" type="App::PropertyDistance" group="Op Values" doc="Holds the min Z value of Stock" attr="0" ro="0" hide="0" status="2097156">
-                    <Float value="-1.0000000000000000"/>
-                </Property>
-                <Property name="OpToolDiameter" type="App::PropertyDistance" group="Op Values" doc="Holds the diameter of the tool" attr="0" ro="0" hide="0" status="2097156">
-                    <Float value="6.0000000000000000"/>
-                </Property>
-                <Property name="Path" type="Path::PropertyPath">
-                    <Path file="Drilling.nc" version="2">
-                        <Center x="0.0000000000000000" y="0.0000000000000000" z="0.0000000000000000"/>
-                    </Path>
-                </Property>
-                <Property name="PeckDepth" type="App::PropertyLength" group="Drill" doc="Incremental Drill depth before retracting to clear chips" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="4.5000000000000000"/>
-                </Property>
-                <Property name="PeckEnabled" type="App::PropertyBool" group="Drill" doc="Enable pecking" attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="8388608">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="Proxy" type="App::PropertyPythonObject">
-                    <Python value="bnVsbA==" encoded="yes" module="PathScripts.PathDrilling" class="ObjectDrilling"/>
-                </Property>
-                <Property name="RetractHeight" type="App::PropertyDistance" group="Drill" doc="The height where feed starts and height during retract tool when path is finished while in a peck operation" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="29.0000000000000000"/>
-                </Property>
-                <Property name="ReturnLevel" type="App::PropertyEnumeration" group="Drill" doc="Controls how tool retracts Default=G99" attr="0" ro="0" hide="0" status="2097152">
-                    <Integer value="1" CustomEnum="true"/>
-                    <CustomEnumList count="2">
-                        <Enum value="G99"/>
-                        <Enum value="G98"/>
-                    </CustomEnumList>
-                </Property>
-                <Property name="ReverseDirection" type="App::PropertyBool" group="Rotation" doc="Reverse direction of pocket operation." attr="0" ro="0" hide="0" status="2097152">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="SafeHeight" type="App::PropertyDistance" group="Depth" doc="Rapid Safety Height between locations." attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="31.0000000000000000"/>
-                </Property>
-                <Property name="StartDepth" type="App::PropertyDistance" group="Depth" doc="Starting Depth of Tool- first cut depth in Z" attr="0" ro="0" hide="0" status="2097152">
-                    <Float value="28.0000000000000000"/>
-                </Property>
-                <Property name="ToolController" type="App::PropertyLink" group="Path" doc="The tool controller that will be used to calculate the path" attr="0" ro="0" hide="0" status="2097152">
-                    <Link value="claas_6mm_endmill"/>
-                </Property>
-                <Property name="UserLabel" type="App::PropertyString" group="Path" doc="User Assigned Label" attr="0" ro="0" hide="0" status="2097152">
-                    <String value=""/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="false"/>
                 </Property>
             </Properties>
         </Object>
@@ -2084,8 +1927,8 @@
             <Properties Count="15" TransientCount="0">
                 <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
                     <ExpressionEngine count="2">
-                        <Expression path="VertRapid" expression="SetupSheet.VertRapid"/>
                         <Expression path="HorizRapid" expression="SetupSheet.HorizRapid"/>
+                        <Expression path="VertRapid" expression="SetupSheet.VertRapid"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="HorizFeed" type="App::PropertySpeed" group="Feed" doc="Feed rate for horizontal moves" attr="0" ro="0" hide="0" status="2097152">
@@ -2134,6 +1977,219 @@
                     <Float value="0.0000000000000000"/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </Object>
+        <Object name="CutMaterial">
+            <Properties Count="7" TransientCount="0">
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="0">
+                    </ExpressionEngine>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217729">
+                    <String value="CutMaterial"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="Mesh" type="Mesh::PropertyMeshKernel" status="134217729">
+                    <Mesh file="MeshKernel.bms"/>
+                </Property>
+                <Property name="Placement" type="App::PropertyPlacement" status="8388609">
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="Proxy" type="App::PropertyPythonObject" status="1">
+                    <Python value="bnVsbA==" encoded="yes" json="yes"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="649">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </Object>
+        <Object name="Drilling">
+            <Properties Count="37" TransientCount="0">
+                <Property name="Active" type="App::PropertyBool" group="Path" doc="Make False, to prevent operation from generating code" attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="AddTipLength" type="App::PropertyBool" group="Drill" doc="Calculate the tip length and subtract from final depth" attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="AttemptInverseAngle" type="App::PropertyBool" group="Rotation" doc="Attempt the inverse angle for face access if original rotation fails." attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Base" type="App::PropertyLinkSubListGlobal" group="Path" doc="The base geometry for this operation" attr="0" ro="0" hide="0" status="2097152">
+                    <LinkSubList count="20">
+                        <Link obj="Clone" sub="Face25"/>
+                        <Link obj="Clone" sub="Face26"/>
+                        <Link obj="Clone" sub="Face27"/>
+                        <Link obj="Clone" sub="Face28"/>
+                        <Link obj="Clone" sub="Face29"/>
+                        <Link obj="Clone" sub="Face30"/>
+                        <Link obj="Clone" sub="Face31"/>
+                        <Link obj="Clone" sub="Face32"/>
+                        <Link obj="Clone" sub="Face33"/>
+                        <Link obj="Clone" sub="Face34"/>
+                        <Link obj="Clone" sub="Face35"/>
+                        <Link obj="Clone" sub="Face36"/>
+                        <Link obj="Clone" sub="Face37"/>
+                        <Link obj="Clone" sub="Face38"/>
+                        <Link obj="Clone" sub="Face39"/>
+                        <Link obj="Clone" sub="Face40"/>
+                        <Link obj="Clone" sub="Face41"/>
+                        <Link obj="Clone" sub="Face42"/>
+                        <Link obj="Clone" sub="Face43"/>
+                        <Link obj="Clone" sub="Face44"/>
+                    </LinkSubList>
+                </Property>
+                <Property name="ClearanceHeight" type="App::PropertyDistance" group="Depth" doc="The height needed to clear clamps and obstructions" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="5.0000000000000000"/>
+                </Property>
+                <Property name="Comment" type="App::PropertyString" group="Path" doc="An optional comment for this Operation" attr="0" ro="0" hide="0" status="2097152">
+                    <String value=""/>
+                </Property>
+                <Property name="CoolantMode" type="App::PropertyString" group="Path" doc="Coolant mode for this operation" attr="0" ro="0" hide="0" status="2097152">
+                    <String value="None"/>
+                </Property>
+                <Property name="CycleTime" type="App::PropertyString" group="Path" doc="Operations Cycle Time Estimation" attr="0" ro="0" hide="0" status="2097156">
+                    <String value="00:01:17"/>
+                </Property>
+                <Property name="Disabled" type="App::PropertyStringList" group="Base" doc="List of disabled features" attr="0" ro="0" hide="0" status="2097152">
+                    <StringList count="0">
+                    </StringList>
+                </Property>
+                <Property name="DwellEnabled" type="App::PropertyBool" group="Drill" doc="Enable dwell" attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DwellTime" type="App::PropertyFloat" group="Drill" doc="The time to dwell between peck cycles" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="1.0000000000000000"/>
+                </Property>
+                <Property name="EnableRotation" type="App::PropertyEnumeration" group="Rotation" doc="Enable rotation to gain access to pockets/areas not normal to Z axis." attr="0" ro="0" hide="0" status="2097152">
+                    <Integer value="0" CustomEnum="true"/>
+                    <CustomEnumList count="4">
+                        <Enum value="Off"/>
+                        <Enum value="A(x)"/>
+                        <Enum value="B(y)"/>
+                        <Enum value="A &amp; B"/>
+                    </CustomEnumList>
+                </Property>
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="6">
+                        <Expression path="PeckDepth" expression="OpToolDiameter * 0.75"/>
+                        <Expression path="ClearanceHeight" expression="OpStockZMax + SetupSheet.ClearanceHeightOffset"/>
+                        <Expression path="RetractHeight" expression="OpStartDepth + 1mm"/>
+                        <Expression path="SafeHeight" expression="OpStockZMax + SetupSheet.SafeHeightOffset"/>
+                        <Expression path="FinalDepth" expression="-20mm"/>
+                        <Expression path="StartDepth" expression="OpStartDepth"/>
+                    </ExpressionEngine>
+                </Property>
+                <Property name="ExtraOffset" type="App::PropertyEnumeration" group="Drill" doc="How far the drill depth is extended" attr="0" ro="0" hide="0" status="2097152">
+                    <Integer value="0" CustomEnum="true"/>
+                    <CustomEnumList count="3">
+                        <Enum value="None"/>
+                        <Enum value="Drill Tip"/>
+                        <Enum value="2x Drill Tip"/>
+                    </CustomEnumList>
+                </Property>
+                <Property name="FinalDepth" type="App::PropertyDistance" group="Depth" doc="Final Depth of Tool- lowest value in Z" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="-20.0000000000000000"/>
+                </Property>
+                <Property name="InverseAngle" type="App::PropertyBool" group="Rotation" doc="Inverse the angle. Example: -22.5 -&gt; 22.5 degrees." attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217728">
+                    <String value="Drilling"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="Locations" type="App::PropertyVectorList" group="Path" doc="Base locations for this operation" attr="0" ro="0" hide="0" status="2097152">
+                    <VectorList file="Locations"/>
+                </Property>
+                <Property name="OpFinalDepth" type="App::PropertyDistance" group="Op Values" doc="Holds the calculated value for the FinalDepth" attr="0" ro="0" hide="0" status="2097156">
+                    <Float value="-20.0000000000000000"/>
+                </Property>
+                <Property name="OpStartDepth" type="App::PropertyDistance" group="Op Values" doc="Holds the calculated value for the StartDepth" attr="0" ro="0" hide="0" status="2097156">
+                    <Float value="0.0000000000000000"/>
+                </Property>
+                <Property name="OpStockZMax" type="App::PropertyDistance" group="Op Values" doc="Holds the max Z value of Stock" attr="0" ro="0" hide="0" status="2097156">
+                    <Float value="0.0000000000000000"/>
+                </Property>
+                <Property name="OpStockZMin" type="App::PropertyDistance" group="Op Values" doc="Holds the min Z value of Stock" attr="0" ro="0" hide="0" status="2097156">
+                    <Float value="-29.0000000000000000"/>
+                </Property>
+                <Property name="OpToolDiameter" type="App::PropertyDistance" group="Op Values" doc="Holds the diameter of the tool" attr="0" ro="0" hide="0" status="2097156">
+                    <Float value="6.0000000000000000"/>
+                </Property>
+                <Property name="Path" type="Path::PropertyPath">
+                    <Path file="Drilling.nc" version="2">
+                        <Center x="0.0000000000000000" y="0.0000000000000000" z="0.0000000000000000"/>
+                    </Path>
+                </Property>
+                <Property name="PeckDepth" type="App::PropertyLength" group="Drill" doc="Incremental Drill depth before retracting to clear chips" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="4.5000000000000000"/>
+                </Property>
+                <Property name="PeckEnabled" type="App::PropertyBool" group="Drill" doc="Enable pecking" attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Placement" type="App::PropertyPlacement" status="8388608">
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="Proxy" type="App::PropertyPythonObject">
+                    <Python value="bnVsbA==" encoded="yes" module="PathScripts.PathDrilling" class="ObjectDrilling"/>
+                </Property>
+                <Property name="RetractHeight" type="App::PropertyDistance" group="Drill" doc="The height where feed starts and height during retract tool when path is finished while in a peck operation" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="1.0000000000000000"/>
+                </Property>
+                <Property name="ReturnLevel" type="App::PropertyEnumeration" group="Drill" doc="Controls how tool retracts Default=G99" attr="0" ro="0" hide="0" status="2097152">
+                    <Integer value="0" CustomEnum="true"/>
+                    <CustomEnumList count="2">
+                        <Enum value="G99"/>
+                        <Enum value="G98"/>
+                    </CustomEnumList>
+                </Property>
+                <Property name="ReverseDirection" type="App::PropertyBool" group="Rotation" doc="Reverse direction of pocket operation." attr="0" ro="0" hide="0" status="2097152">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="SafeHeight" type="App::PropertyDistance" group="Depth" doc="Rapid Safety Height between locations." attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="3.0000000000000000"/>
+                </Property>
+                <Property name="StartDepth" type="App::PropertyDistance" group="Depth" doc="Starting Depth of Tool- first cut depth in Z" attr="0" ro="0" hide="0" status="2097152">
+                    <Float value="0.0000000000000000"/>
+                </Property>
+                <Property name="ToolController" type="App::PropertyLink" group="Path" doc="The tool controller that will be used to calculate the path" attr="0" ro="0" hide="0" status="2097152">
+                    <Link value="claas_6mm_endmill"/>
+                </Property>
+                <Property name="UserLabel" type="App::PropertyString" group="Path" doc="User Assigned Label" attr="0" ro="0" hide="0" status="2097152">
+                    <String value=""/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="649">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </Object>
+        <Object name="CutMaterial001">
+            <Properties Count="7" TransientCount="0">
+                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
+                    <ExpressionEngine count="0">
+                    </ExpressionEngine>
+                </Property>
+                <Property name="Label" type="App::PropertyString" status="134217729">
+                    <String value="CutMaterial001"/>
+                </Property>
+                <Property name="Label2" type="App::PropertyString" status="67108992">
+                    <String value=""/>
+                </Property>
+                <Property name="Mesh" type="Mesh::PropertyMeshKernel" status="134217729">
+                    <Mesh file="MeshKernel1.bms"/>
+                </Property>
+                <Property name="Placement" type="App::PropertyPlacement" status="8388609">
+                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
+                </Property>
+                <Property name="Proxy" type="App::PropertyPythonObject" status="1">
+                    <Python value="bnVsbA==" encoded="yes" json="yes"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="649">
                     <Bool value="true"/>
                 </Property>
             </Properties>
