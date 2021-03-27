@@ -1,6 +1,6 @@
 # Tiny Stool
 
-This is a project to learn enough about FreeCad to produce a "life-sized" stool. The result was a miniature version of the stool, that will be made ... one fine day.
+This is a project to learn enough about FreeCad to produce a "life-sized" stool. The result was a miniature version of the same stool, which I plan to make one fine day.
 
 ![400097800644_436960](https://user-images.githubusercontent.com/8401267/112724383-62393900-8f13-11eb-8f05-2337760dc286.jpg)
 
